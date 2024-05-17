@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+          rel="stylesheet">
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./index.js" defer></script>
+
+    <!-- Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Web Portfolio</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="/assets/icons/favicon.ico">
+</head>
+<body>
+    
+<main>
+    <!-- Hero Header start-->
+    <header id="heroHeader" class="hero-header">
+        <nav id="navBar" class="nav">
+            <div class="container">
+                <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
+                    <span class="nav__hamburger-top"></span>
+                    <span class="nav__hamburger-center"></span>
+                    <span class="nav__hamburger-bottom"></span>
+                </button>
+                <ul id="navList" class="nav__list">
+                    <li class="nav__list-item">
+                        <a class="nav__list-link active" href="#heroHeader">&lt;Home &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#services">&lt;Services &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#works">&lt;Works &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#contact">&lt;Contact &sol;&gt;</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Hero Header end-->
+
+        <!--Section start-->
+
+        <section class="header__container container">
+            <div class="header__left">
+                <span class="header__sup-text">Hello There! I am a</span>
+                <h1 class="header__title">
+
+                    <span class="header__title-1" data-role="SOFTWARE">SOFTWARE</span>
+
+                    <span class="header__title-2" data-role="DEVELOPER">DEVELOPER</span>
+                    
+                </h1>
+                <p class="header__msg">As a Software developer, my passion lies in creating beautiful and intuitive
+                    user experiences through the use of clean and efficient code.</p>
+                <a href="#" class="header__resume">Resume</a>
+            </div>
+            <div class="header__right">
+                <img src="./assets/illustrations/header.svg" alt="Header section illustration"/>
+            </div>
+        </section>
+        <span class="header__bg"></span>
+    </header>
+
+    <!--Section end-->
+
+    <!-- Services start-->
+
+    <section id="services" class="section container">
+        <h2 class="section__title">Services</h2>
+
+        <div class="service-cards">
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <img src="./assets/services/support.svg" alt="Support Illustration"/>
+                </span>
+                <h3 class="service-card__title">Deployment</h3>
+                <p class="service-card__msg"> I am always available to address any issues or concerns you may have.</p>
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <img src="./assets/services/design.svg" alt="Design Illustration"/>
+                </span>
+                <h3 class="service-card__title">Design</h3>
+                <p class="service-card__msg">Specialized in creating stunning websites that are both visually appealing and user-friendly.</p>
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <img src="./assets/services/developing.svg" alt="Deploy Illustration"/>
+                </span>
+                <h3 class="service-card__title">Delivery</h3>
+                <p class="service-card__msg"> I offer Software development services tailored to your specific needs by optimising/maintaining any software.</p>
+                <span class="service-card__bg"></span>
+            </article>
+        </div>
+    </section>
+    <!--Services end-->
+
+
+    <!-- Sample Works start-->
+
+
+    <section id="works" class="section container">
+        <h2 class="section__title">My Works</h2>
+        <div class="works">
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="images/marble.jpg" alt="Project 1"/>
+                </span>
+                    <a href= "/Restaurant Project/index.html" target="_blank" class="work__title">Restaurant Website</a>
+                    <span class="work__badges">
+                    <span class="work__badge">HTML5, CSS3, Javascript, Python, SQL</span>
+                </span>
+                </div>
+            </article>
+    </section>
+    <!--Sample works end-->
+
+
+    <!-- Contact start-->
+    <section id="contact" class="section container">
+        <h2 class="section__title">Let's Connect!</h2>
+        <div class="contact">
+            <form class="contact__form">
+                <div class="contact__field-wrapper">
+                    <label for="contactNameTxt">Name:</label>
+                    <input id="contactNameTxt" type="text" placeholder="What's your name?"/>
+                </div>
+                <div class="contact__field-wrapper">
+                    <label for="contactDescriptionTxt">Message:</label>
+                    <textarea id="contactDescriptionTxt" placeholder="Lets connect!"></textarea>
+                </div>
+
+                <button type="submit" class="contact__submit-btn">Submit</button>
+            </form>
+            <span class="contact__illustration">
+                <img src="./assets/illustrations/connect.svg" alt="Group of people connecting with each other"/>
+            </span>
+        </div>
+    </section>
+
+    <!--Contact end-->
+
+    <!-- Footer start-->
+    <footer class="footer">
+        Web Portfolio made by <a class="footer__link" href="https://github.com/TaqrimAli" target="_blank"> Taqrim Ali</a>
+    </footer>
+    <!--Footer end-->
+</main>
+</body>
+</html>
