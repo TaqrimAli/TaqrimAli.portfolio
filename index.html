@@ -10,14 +10,15 @@
 
     <!-- CSS & JS -->
     <link rel="stylesheet" href="style.css"/>
-    <script src="index.js" defer></script>
 
     <!-- Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Web Portfolio</title>
+    <!--Favicon-->
+    <link rel="icon" href="./assets/icons/favicon.ico">
 
-    <!-- Icon -->
+
 
 </head>
 <body>
@@ -64,10 +65,10 @@
                 </h1>
                 <p class="header__msg">As a Software developer, my passion lies in creating beautiful and intuitive
                     user experiences through the use of clean and efficient code.</p>
-                <a href="#" class="header__resume">Resume</a>
+                    <a href="#" class="header__resume">Resume</a>
             </div>
             <div class="header__right">
-                <img src="./assets/illustrations/header.svg" alt="Header section illustration"/>
+                <canvas id="Matrix"></canvas>
             </div>
         </section>
     </header>
@@ -113,19 +114,33 @@
 
 
     <section id="works" class="section container">
+        
         <h2 class="section__title">My Works</h2>
         <div class="works">
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                    <img src="images/Question-mark.jpeg" alt="Project 1"/>
-                </span>
-                    <a href="./Restaurant Project/index.html" target="_blank" class="work__title">Restaurant Website Project</a>
-                    <span class="work__badges">
-                    <span class="work__badge">HTML5, CSS3, Javascript</span>
-                </span>
-                </div>
-        </article>
+
+        <article class="work">
+            <div class="work__box">
+                <span class="work__img-box">
+                <img src="images/Question-mark.jpeg" alt="Python project"/>
+            </span>
+                <a href="./project 1/Project1.html" target="_blank" class="work__title"> Python Project</a>
+                <span class="work__badges">
+                <span class="work__badge">HTML5, CSS3, Python</span>
+            </span>
+            </div>
+    </article>
+
+    <article class="work">
+        <div class="work__box">
+            <span class="work__img-box">
+            <img src="images/Question-mark.jpeg" alt="Database Project"/>
+        </span>
+            <a href="./Project 2/Project2.html" target="_blank" class="work__title"> Database Project</a>
+            <span class="work__badges">
+            <span class="work__badge">HTML5, CSS3, MySQL</span>
+        </span>
+        </div>
+</article>
 
         </div>
     </section>
@@ -162,5 +177,7 @@
     </footer>
     <!--Footer end-->
 </main>
+
+<script src="index.js"></script>
 </body>
 </html>

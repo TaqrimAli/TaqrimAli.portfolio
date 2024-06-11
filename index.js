@@ -45,7 +45,7 @@ window.addEventListener('resize', ()=>{
   }
 });
 
-// As the user scrolls, the active link should change based on the section currently displayed on the screen.
+// As the user scrolls, the active link(nav bars) should change based on the section currently displayed on the screen.
 window.addEventListener('scroll', ()=>{
   const sections = document.querySelectorAll('#heroHeader, #services, #works, #contact');
 
@@ -59,8 +59,8 @@ window.addEventListener('scroll', ()=>{
         return link.href.includes('#'+ID);
       })[0];
       console.log(LINK);
-      currentActiveLink.classList.remove(ACTIVE_LINK_CLASS);
-      LINK.classList.add(ACTIVE_LINK_CLASS);
+      currentActiveLink.classList.remove(ACTIVE_LINK_CLASS); //Switch to next nav bar link
+      LINK.classList.add(ACTIVE_LINK_CLASS); //Add the next nav bar link and make it active
       currentActiveLink = LINK;
     }
   });
@@ -129,3 +129,53 @@ new SweetScroll({
   easing: 'easeOutQuint',
   offset: NAV_BAR.getBoundingClientRect().height - 80
 });
+
+//header Resume button
+
+function changeBgColour(value){
+  document.body.style.background = value;
+};
+
+//Canvas animation
+
+const canvas = document.getElementById('Matrix');
+const context = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const nums = '0123456789';
+
+const alphabet = katakana + latin + nums;
+
+const fontSize = 16;
+const columns = canvas.width/fontSize;
+
+const rainDrops = [];
+
+for( let x = 0; x < columns; x++ ) {
+	rainDrops[x] = 1;
+}
+
+const draw = () => {
+	context.fillStyle = 'rgba(0, 0, 0, 0.05)';
+	context.fillRect(0, 0, canvas.width, canvas.height);
+	
+	context.fillStyle = 'aqua';
+	context.font = fontSize + 'px monospace';
+
+	for(let i = 0; i < rainDrops.length; i++)
+	{
+		const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+		context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
+		
+		if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975){
+			rainDrops[i] = 0;
+        }
+		rainDrops[i]++;
+	}
+};
+
+setInterval(draw, 30);

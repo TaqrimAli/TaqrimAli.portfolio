@@ -78,7 +78,7 @@ html {
 
 body {
     color: var(--grass);
-    background-color: #111111;
+    background-color: #000000;
     position: relative;
     height: 100%;
     line-height: 1.5;
