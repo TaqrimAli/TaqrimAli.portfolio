@@ -174,7 +174,7 @@ const draw = () => {
 	{
 		const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length)); // charAt will give me back the character instead of the index number. (Math.floor(Math.random() * alphabet.length)) will give me a random character within the alphabet length.
 		context.fillText(text, i*fontSize, rainDrops[i]*fontSize); // multiplying the x and y coordinates with font-size because the spacing is needed between each text.
-    //The first parameter text will be the character I want to build on the screen, the second parameter i*fontSize is the x coordinate and the third parameter rainDrops[i]*fontSize is the y coordinate
+    //The first parameter text will be the character I want to print on the screen, the second parameter i*fontSize is the x coordinate and the third parameter rainDrops[i]*fontSize is the y coordinate
 		
 		if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975){ // The purpose of the Math.random() > 0.975 is to randomize the reset of the columns which will give a ring-like effect
 			rainDrops[i] = 0; //  If the y coordinate is greater the canvas height the y coordinate is set to 0 so the characters can start falling again
