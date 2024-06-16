@@ -1,4 +1,7 @@
-//Storing the ids and classes in a variable to use in my javascripts Reference is https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+//Reference is https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+
+//Storing the ids and classes in a variable to use in my javascripts.
+
 const NAV_BAR = document.getElementById('navBar');
 const NAV_LIST = document.getElementById('navList');
 const HERO_HEADER = document.getElementById('heroHeader');
