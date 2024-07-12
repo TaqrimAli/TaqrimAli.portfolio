@@ -1,7 +1,6 @@
 # Project in python(A climate chart for weather in London)
 
 import matplotlib.pyplot as plt
-import numpy as np
 
 # Monthly average temperature (°C) and rainfall (mm)
 months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
