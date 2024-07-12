@@ -65,8 +65,6 @@ def main():
 
     print("\nThank you for using the Weather Forecast App!")
 
-if __name__ == "__main__":
-    main()
-
+main()
 # Formatted Message - Signify End of Output
 print(f"{format_output}---END---{format_reset}")

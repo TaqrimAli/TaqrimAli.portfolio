@@ -129,15 +129,15 @@ SERVICE_BOXES.forEach(service => {
 
 // Handles smooth scrolling by creating a constructor method
 new SweetScroll({
-  trigger: '.nav__list-link', // Every nav link will scrolled down the page will be triggered
-  easing: 'easeOutQuint', // Every nav link will easeout smoothly on the scroll
+  trigger: '.nav__list-link', // Every nav link scrolled down the page will be triggered
+  easing: 'easeOutQuint', // Every nav link will ease-out smoothly on the scroll
   offset: NAV_BAR.getBoundingClientRect().height - 80 //I want to return the top position of the nav bar DOM rectangle height - 80
 });
 
 //Canvas animation
 
 const canvas = document.getElementById('Matrix');
-const context = canvas.getContext('2d'); // The animation will be showing in 2d
+const context = canvas.getContext('2d'); // The animation will be showing in 2d format
 
 //I want the canvas to cover the overall size of the header right container
 
@@ -180,7 +180,7 @@ const draw = () => {
     //The first parameter text will be the character I want to print on the screen, the second parameter i*fontSize is the x coordinate and the third parameter rainDrops[i]*fontSize is the y coordinate
 		
 		if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975){ // The purpose of the Math.random() > 0.975 is to randomize the reset of the columns which will give a ring-like effect
-			rainDrops[i] = 0; //  If the y coordinate is greater the canvas height the y coordinate is set to 0 so the characters can start falling again
+			rainDrops[i] = 0; //  If the y coordinate is greater the canvas height, the y coordinate is set to 0 so the characters can start falling again
         }
 		rainDrops[i]++; // The first column line of the y axis will show but the iteration afterwards will not show the first column on the y axis. 
 	}
