@@ -26,13 +26,11 @@ plt.legend(fontsize=12)
 
 # Annotate data points (temperature and rainfall)
 for i, temp in enumerate(avg_temp):
-    plt.text(i, temp + 0.3, f'{temp:.1f}°C', ha='center', va='bottom', fontsize=10)
-    plt.text(i, rainfall[i] - 2, f'{rainfall[i]} mm', ha='center', va='top', fontsize=10)
+    plt.text(i, temp + 0.3, f'{temp}°C', ha='center', va='bottom', fontsize=10) # 0.3 is in rem 
+    plt.text(i, rainfall[i] - 2, f'{rainfall[i]} mm', ha='center', va='top', fontsize=10) # -2 is in rem
 
-# Customize grid lines and ticks
+# Customize grid lines
 plt.grid(axis='y', linestyle='--', alpha=0.7)
-plt.xticks(rotation=45, fontsize=12)
-plt.yticks(fontsize=12)
 
 # Add a background color
 plt.axhspan(0, 10, facecolor='lightgray', alpha=0.2) # Alpha same meaning as opacity in css where you can set the transparency of a color
