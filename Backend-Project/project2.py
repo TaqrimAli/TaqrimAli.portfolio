@@ -38,6 +38,6 @@ plt.yticks(fontsize=12)
 plt.axhspan(0, 10, facecolor='lightgray', alpha=0.2) # Alpha same meaning as opacity in css where you can set the transparency of a color
 
 # Show the plot
-plt.tight_layout()
+plt.tight_layout() # This is part of the matplotlib in-built function used to cover more space on the graph
 plt.show()
 
