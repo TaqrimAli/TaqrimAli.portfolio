@@ -3,7 +3,7 @@
 
 
 # Formatting Variables
-format_output = "\033[47m\033[30m"
+format_output = "\033[47m\033[30m" # * Coloring the background-color of the command line text
 format_reset = "\033[0m"
 
 
