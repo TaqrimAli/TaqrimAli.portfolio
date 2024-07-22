@@ -1,4 +1,4 @@
-#   Project in python(Python Waether App)
+#   Project in python(Python Weather App)
 # * Referenced from https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html#256-colors this link for ANSI color coding
 
 
