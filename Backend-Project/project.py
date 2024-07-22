@@ -1,5 +1,5 @@
 #   Project in python(Python Waether App)
-
+# * Referenced from https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html#256-colors this link for ANSI color coding
 
 
 # Formatting Variables
@@ -28,7 +28,6 @@ def get_weather(city): # * Use this function as a global scope
 
 
 def format_conditions(conditions): # ! Here I used ANSI python color codes and changed the color based on each condition
-    # * Referenced from https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html#256-colors this link
     """
     Formats weather conditions with color-coding.
     """
