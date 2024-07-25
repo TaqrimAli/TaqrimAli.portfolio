@@ -11,5 +11,5 @@ LIBRARIES USED:
 
 RUNNING MY PYTHON PROJECTS:
 
-You wil have to create a replit account to run my python code.
-- The url for replit is here: https://replit.com/signup
+You wil have to create an account and sign in using replit to run my python code.
+- The url to sign up for replit is here: https://replit.com/signup
