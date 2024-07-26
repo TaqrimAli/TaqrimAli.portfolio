@@ -7,7 +7,8 @@ This is my portfolio project containing the Following programming languages:
 - Python
 
 LIBRARIES USED:
-- Matplotlib is used for making and plotting graphs in python.
+- React library is used to make a calculator project
+- Matplotlib is used to making and plotting graphs in python.
 
 RUNNING MY PYTHON PROJECTS:
 
