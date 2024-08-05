@@ -14,3 +14,8 @@ RUNNING MY PYTHON PROJECTS:
 
 You wil have to create an account and sign in using replit to run my python code.
 - The url to sign up for replit is here: https://replit.com/signup
+
+PORTFOLIO URL:
+
+- My portfolio website link is here:
+- https://taqrimali.github.io/TaqrimAli.portfolio/ 
